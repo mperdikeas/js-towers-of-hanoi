@@ -42,10 +42,10 @@ describe('README test', function() {
 describe('verify call stack exceeded limit', function() {
     it('works', function() {
         let stackLimitEncountered = false;
-        for (let n = 0; n < Number.MAX_VALUE; n++) {
+        for (let n = 0; n < Number.MAX_VALUE; n+=100) {
             try {
                 const mostlyIgnored = solveHanoi(n, 1, 2, 3).next();
-                if (n % 1001 === 0)
+                if ( (n/100) % 5 === 0)
                     console.log(`n=${n}; first move is: ${JSON.stringify(mostlyIgnored)}`);
             } catch (e) {
                 assert.strictEqual(e.constructor.name, 'RangeError');

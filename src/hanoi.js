@@ -20,13 +20,6 @@ function steps(n) {
     return Math.pow(2, n)-1;
 }
 
-const n = 3;
-console.log(`For ${n} disks ${steps(n)} steps are required.`);
-console.log('The solution is as follows:');
-for (let move of solveHanoi(n)) {
-    console.log(JSON.stringify(move));
-}
-
 
 exports.solveHanoi = solveHanoi;
 exports.steps = steps;
