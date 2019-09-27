@@ -1,6 +1,7 @@
 'use strict';
 
 
-import {solveHanoi} from './hanoi.js';
+import {solveHanoi, steps} from './hanoi.js';
 
 exports.solveHanoi = solveHanoi;
+exports.steps      = steps;
