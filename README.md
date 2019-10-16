@@ -18,4 +18,9 @@ A JavaScript library implementing a solution to the Towers of Hanoi problem.
         console.log(JSON.stringify(move));
     }
 
+# Example application
+
+<a href='http://mperdikeas.github.io/hanoi/index.html'>This application</a> was built using
+this library. Github is <a href='https://github.com/mperdikeas/js-towers-of-hanoi/'>here</a>
+
 
